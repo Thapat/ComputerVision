@@ -100,7 +100,7 @@ class ObjectDetection:
             fps = 1/np.round(end_time - start_time, 2)
             #print(f"Frames Per Second : {fps}")
              
-            cv2.putText(image, f'FPS: {int(fps)}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0), 2)
+            cv2.putText(frame, f'FPS: {int(fps)}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0), 2)
             
             cv2.imshow('YOLOv5 Detection', frame)
  
